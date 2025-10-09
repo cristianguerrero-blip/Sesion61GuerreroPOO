@@ -84,6 +84,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Logicos "/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogicosActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

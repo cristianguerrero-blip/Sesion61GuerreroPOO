@@ -41,6 +41,11 @@ public class Operadores extends javax.swing.JFrame {//Inicia la clase
         });
 
         btnLogicos.setText("Logicos ");
+        btnLogicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogicosActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -105,6 +110,17 @@ public class Operadores extends javax.swing.JFrame {//Inicia la clase
 + "\nIgual que :"+igualque
 + "\nDiferente de :"+diferede)
     }//GEN-LAST:event_btnRelacionablesActionPerformed
+
+    private void btnLogicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogicosActionPerformed
+        boolean and =(num1==num2)&&(num1>num2);
+        boolean or =(num1==num2)||(num1>num2);
+        boolean not =!(num1==num2);
+
+        JOptionPane.showMessageDialog(null,"Operadores relacionablees"
++ "\nAND :"+and
++ "\nOR :"+or
++ "\nNegacion :"+not)
+    }//GEN-LAST:event_btnLogicosActionPerformed
 
     /**
      * @param args the command line arguments
